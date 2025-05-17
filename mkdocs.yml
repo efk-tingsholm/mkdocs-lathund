@@ -9,6 +9,7 @@ nav:
   - MkDocs Config: content/config.md
   - Skriva i markdown: content/markdown.md
   - GitHub Pages: content/github-pages.md
+  - Git: content/git.md
 
 
 markdown_extensions:
