@@ -4,12 +4,20 @@ theme:
   name: material
   
 nav:
-  - Start: index.md
+  - Hem: index.md
+
+  - Setup: content/first-time.md
+  - Nytt projekt: content/new-project.md 
+  - Ny dator: content/new-pc.md
+
+
   - Python: content/python.md
   - MkDocs Config: content/config.md
   - Skriva i markdown: content/markdown.md
   - GitHub Pages: content/github-pages.md
   - Git: content/git.md
+  - Temp: include/kom-igang.md
+  - Temp2: include/mkdocs-click-watch-bugg.md
 
 
 markdown_extensions:
