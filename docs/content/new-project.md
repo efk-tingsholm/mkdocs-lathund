@@ -1,4 +1,4 @@
-# Nytt projekt (MkDocs + GitHub Pages)
+# Starta upp MkDocs + GitHub Pages
 
 ## Förutsättningar
 Kontrollera att du har Git, Python och pip:
@@ -10,82 +10,80 @@ python -m pip --version
 ```
 
 Installera MkDocs + Material (om du inte redan har det):
-
 ```bash
 python -m pip install mkdocs mkdocs-material
 ```
 
----
-
-## 1) Skapa projekt lokalt
-Skapa en ny mapp och initiera MkDocs:
-
+## Skapa MkDocs-projekt
+Navigera till den mapp där du vill ha projektmappen, öppna en terminal och kör:
 ```bash
-mkdir <PROJEKT-NAMN>
-cd <PROJEKT-NAMN>
-mkdocs new .
+mkdocs new <projektnamn>
 ```
 
-Starta lokalt för att testa:
+För att testa, navigera in i projektmappen, smidigast via terminalen direkt:
+```bash
+cd <projektnamn>
+```
+> Du ska se mkdocs.yml i mappen där du kör kommandona.
 
+Väl inne i projektmappen kör kommandot serve:
 ```bash
 mkdocs serve
 ```
+> För att stänga ner den lokala servern tryck ctrl + C inne i terminalen.
 
----
 
-## 2) Initiera Git och gör första commit
+## Skapa en repo på GitHub
+Skapa en ny repository på GitHub. Namnet behöver inte vara samma, men det känns ju bra.
+
+Notera, gör gärna en tom repo, ingen README/-gitignore/licens. Då slipper du krockar när du vill ladda upp ditt mkdocs-projekt istället.
+
+Kopiera repots URL. Alltså länken.
+
+
+## Starta Git och första commit
+Dessa körs inne i projektmappen. Om liveservern är igång i terminalen, stäng den med Ctrl + C.
 ```bash
 git init
 git add .
 git commit -m "Initial commit"
 ```
 
-> Tips: Om du vill använda `main` som default-branch:
+Sätt `main` som default-branch:
 ```bash
 git branch -M main
 ```
 
----
 
-## 3) Skapa repo på GitHub
-Skapa ett nytt repo på GitHub (gärna tomt).
-
-Kopiera repots URL (HTTPS eller SSH).
-
----
-
-## 4) Koppla remote + första push
+## Koppla ihop GitHub och ditt lokala projekt
 ```bash
 git remote add origin <REPO-URL>
 git push -u origin main
 ```
 
-Om du kör `master` istället för `main`:
 
-```bash
-git push -u origin master
-```
 
----
-
-## 5) Publicera med GitHub Pages (MkDocs)
+## Publicera med GitHub Pages
+MkDocs har en funktion för att publicera sidor direkt till GitHub Pages. Skrivs i terminal i projektmappen.
 ```bash
 mkdocs gh-deploy
 ```
+> Det skapar/uppdaterar en branch som heter `gh-pages`.
 
-Det skapar/uppdaterar en branch som heter `gh-pages`.
 
----
+## Om sidan inte syns
+Om Pages redan pekar på gh-pages behöver du inte ändra något här.
 
-## 6) Om sidan inte syns (Pages-inställning)
 På GitHub: Settings → Pages
 
 Välj:
+
 - Source: Deploy from a branch
 - Branch: `gh-pages` (root)
 
----
+
+--- 
+
 
 ## Vanliga problem
 

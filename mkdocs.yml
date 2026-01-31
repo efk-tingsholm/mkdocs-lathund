@@ -6,7 +6,7 @@ theme:
 nav:
   - Hem: index.md
 
-  - Setup: content/first-time.md
+
   - Nytt projekt: content/new-project.md 
   - Ny dator: content/new-pc.md
 
@@ -16,8 +16,7 @@ nav:
   - Skriva i markdown: content/markdown.md
   - GitHub Pages: content/github-pages.md
   - Git: content/git.md
-  - Temp: include/kom-igang.md
-  - Temp2: include/mkdocs-click-watch-bugg.md
+  - BUGG: include/mkdocs-click-watch-bugg.md
 
 
 markdown_extensions:
