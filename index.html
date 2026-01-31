@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="content/first-time/">
+        <link rel="next" href="content/new-project/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -244,36 +244,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#snabbstart" class="md-nav__link">
+  <a href="#day-to-day" class="md-nav__link">
     <span class="md-ellipsis">
-      Snabbstart
+      Day-to-Day
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#skapa-mkdocs-projekt" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flera-projekt-samtidigt" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flera projekt samtidigt
+      Skapa MkDocs-projekt
     </span>
   </a>
   
@@ -283,28 +265,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="content/first-time/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Setup
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -470,34 +430,12 @@
   
   
     <li class="md-nav__item">
-      <a href="include/kom-igang/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Temp
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="include/mkdocs-click-watch-bugg/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Temp2
+    BUGG
     
   </span>
   
@@ -534,36 +472,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#snabbstart" class="md-nav__link">
+  <a href="#day-to-day" class="md-nav__link">
     <span class="md-ellipsis">
-      Snabbstart
+      Day-to-Day
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#skapa-mkdocs-projekt" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flera-projekt-samtidigt" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flera projekt samtidigt
+      Skapa MkDocs-projekt
     </span>
   </a>
   
@@ -586,32 +506,60 @@
 
 
 <h1 id="lathund-for-mkdocs">Lathund för MkDocs<a class="headerlink" href="#lathund-for-mkdocs" title="Permanent link">&para;</a></h1>
-<p>MkDocs är en site-creator som tar text i markdown och gör hemsida av det. Populär för teknisk dokumentation. Kräver python och valfritt textredigeringsverktyg. :rocket:</p>
-<h2 id="snabbstart">Snabbstart<a class="headerlink" href="#snabbstart" title="Permanent link">&para;</a></h2>
-<p>ATT GÖRA: Flytta undan det gamla, lägg till snabb guide för att snabbt göra en dok, serve:a den och lägga in väldigt basic nav och markdown i ett dokument.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
-<h2 id="flera-projekt-samtidigt">Flera projekt samtidigt<a class="headerlink" href="#flera-projekt-samtidigt" title="Permanent link">&para;</a></h2>
-<p>För att köra flera MkDocs-sidor parallellt.</p>
-<div class="highlight"><pre><span></span><code><span class="n">mkdocs</span> <span class="n">serve</span> <span class="n">-a</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span><span class="p">:</span><span class="n">8001</span>
-</code></pre></div>
+<p>MkDocs är en site-creator som tar text i markdown och gör hemsida av det. Populär för teknisk dokumentation. Kräver python och valfritt textredigeringsverktyg. </p>
+<h2 id="day-to-day">Day-to-Day<a class="headerlink" href="#day-to-day" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Öppna terminal i projektmappen</strong><br />
+   T.ex. högerklicka i Utforskaren → <em>"Öppna i terminal"</em></p>
+</li>
+<li>
+<p><strong>Hämta senaste versionen från GitHub</strong><br />
+I samma terminal som ovan
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Öppna textredigeringsprogram</strong> <br />
+I rätt mapp, t.ex. VSCode via samma terminal som ovan.
+<div class="highlight"><pre><span></span><code>code<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Starta lokal server</strong>  <br />
+För att se ändringar i realtid
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Utför arbete</strong> <br />
+Ja, du vet. Sånt.</p>
+</li>
+<li>
+<p><strong>Spara backup</strong>  <br />
+Ladda upp innehållet till GitHub. Öppna terminal i projektmappen, eller återanvänd ovanstående genom att stänga ner liveservern med 'ctrl+c'.
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Obligatorisk kommentar&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>
+</code></pre></div></p>
 <blockquote>
-<p>Startar servern på port 8001 istället för standard 8000.
-Öppna i ny terminalflik/fönster så kan du ha t.ex. både projektet och lathunden igång samtidigt.</p>
+<p>Kör git status när du vill se vad som kommer med i nästa commit.</p>
 </blockquote>
-<hr />
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+</li>
+<li>
+<p><strong>Uppdatera hemsidan</strong> <br />
+Uppdatera GitHub Pages via mkdocs.
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy<span class="w">     </span><span class="c1"># Skapar/Uppdaterar gh-pages</span>
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="skapa-mkdocs-projekt">Skapa MkDocs-projekt<a class="headerlink" href="#skapa-mkdocs-projekt" title="Permanent link">&para;</a></h2>
+<p>Öppna terminal i mappen där du vill göra projektmappen. Skapa, navigera in i mappen och starta live-servern. 
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>&lt;projektnamn&gt;
+<span class="nb">cd</span><span class="w"> </span>&lt;projektnamn&gt;
+mkdocs<span class="w"> </span>serve
+</code></pre></div></p>
 
 
 
